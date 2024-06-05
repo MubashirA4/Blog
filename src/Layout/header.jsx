@@ -2,7 +2,7 @@ import React from 'react'
 import './css/header.css'
 import Logo from './Assets/Logo.png'
 import { IoSearchSharp } from "react-icons/io5";
-
+import { MdOutlineWbSunny } from "react-icons/md";
 
 const Header = () => {
   return (
@@ -23,8 +23,13 @@ const Header = () => {
               </ul>
           </nav>
             <div className="search">
+              <div className="isearch">
               <input type="text" placeholder='Search' />
               <IoSearchSharp className='sicon'/>
+              </div>
+              <div className="mode">
+              <MdOutlineWbSunny className='sun'/>
+              </div>
             </div>
         </div>
       </div>
