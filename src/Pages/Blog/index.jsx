@@ -17,6 +17,7 @@ import Elizbath from './assets/profile/Elizabeth.png'
 import Ernie from './assets/profile/Ernie.png'
 import Eric from './assets/profile/eric.png'
 import { Button } from 'react-bootstrap';
+
 const Blog = () => {
   return (
     <div>

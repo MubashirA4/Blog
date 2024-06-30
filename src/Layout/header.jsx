@@ -6,7 +6,7 @@ import { MdOutlineWbSunny } from "react-icons/md";
 
 const Header = () => {
   return (
-    <header> 
+    <header>
       <div className='container'>
         <div className="head">
           <div className='logo'>
@@ -26,15 +26,12 @@ const Header = () => {
             <div className="isearch">
               <input type="text" placeholder='Search' />
               <IoSearchSharp className='sicon' />
-            </div>
           </div>
-          <div className="mode">
-            <div className="m-off">           
-            </div>
-            <div className="sun">
-              <MdOutlineWbSunny/>
-            </div>
+          <div className="toggle">
+            <input type="checkbox" name="" id="check" />
+            <label htmlFor="check" className='button'></label>
           </div>
+            </div>
         </div>
       </div>
     </header>

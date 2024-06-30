@@ -78,18 +78,33 @@ nav ul li{
     right: 10px;
     color: rgba(82, 82, 91, 1);
 }
-.mode .m-off{
-    background: rgba(75, 107, 251, 1);
-    padding: 20px 35px;
-    border-radius: 30px;
-    position: relative;
+.toggle{
+    margin-left: 30px;
 }
-.container .sun{
+.button{
+  background-color: #d2d2d2;
+  width: 70px;
+  height: 40px;
+  border-radius: 200px;
+  cursor: pointer;
+  position: relative;
+}
+.button::before{
     position: absolute;
-    top: 34px;
-    right: 75px;
-    background-color: white;
-    color: black;
-    padding: 4px 7px;
-    border-radius: 50%;
+    content: " ";
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 100px;
+    margin: 5px;
+    transition: .5s;
+}
+input:checked + .button{
+    background: rgba(75, 107, 251, 1);
+}
+input:checked + .button::before{
+    transform: translateX(30px);
+}
+.toggle input{
+    display: none;
 }

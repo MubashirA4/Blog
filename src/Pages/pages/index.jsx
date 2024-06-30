@@ -20,6 +20,7 @@ import Elizbath from '../Home/assets/profile/Elizabeth.png'
 import Ernie from '../Home/assets/profile/Ernie.png'
 import Eric from '../Home/assets/profile/eric.png'
 
+
 const Pages = () => {
   return (
     <div className='container'>
