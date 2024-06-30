@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');  
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px;
+}
+.container .logo{
+    display: flex;
+    gap: 10px;
+}
+.container .logo img{
+    /* width: 100%; */
+    width: 50px;
+    height: fit-content;
+}
+.container .logo h3{
+    font-family: Plus Jakarta Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    padding: 10px 0px;
+} 
+.container .logo h3 span{
+    font-family: Plus Jakarta Sans;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 28px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    padding: 10px 15px;
+}
+.head ul li a{
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1); 
+    text-decoration: none;
+}
+.search{
+    display: flex;
+}
+.isearch{
+    position: relative;
+}
+.isearch input{
+    background:  rgba(36, 37, 53, 1);
+    border: none;
+    width: fit-content;
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: white;
+}
+.isearch input::placeholder{
+    color: rgba(161, 161, 170, 1);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+}
+.isearch .sicon{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    color: rgba(82, 82, 91, 1);
+}
+.mode .m-off{
+    background: rgba(75, 107, 251, 1);
+    padding: 20px 35px;
+    border-radius: 30px;
+    position: relative;
+}
+.container .sun{
+    position: absolute;
+    top: 34px;
+    right: 75px;
+    background-color: white;
+    color: black;
+    padding: 4px 7px;
+    border-radius: 50%;
+}

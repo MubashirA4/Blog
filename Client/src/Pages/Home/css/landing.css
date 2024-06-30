@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.img{
+    position: relative;
+    margin-bottom: 40px;
+}
+.img img{
+    width: 100%;
+    height: max-content;
+}
+.technology{
+    background: rgba(24, 26, 42, 1);
+    box-shadow: 0px 0px 0px 0.2px rgba(253,242,242,0.75);
+    /* border: 1px solid green; */
+    border-radius: 15px;
+    padding: 30px;
+    position: absolute;
+    bottom: -50px;
+    left: 45px;
+}
+.technology h4{
+    font-family: Work Sans;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    background: rgba(75, 107, 251, 1);
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.technology p{
+    font-family: Work Sans;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    margin: 20px 0px;
+}
+.technology .profile{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+.technology .profile img{
+    width: fit-content;
+}
+.technology .profile h3{
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(151, 152, 159, 1);
+    padding: 5px;
+}
+.technology .profile h5{
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(151, 152, 159, 1);
+    padding: 5px;
+}
+.container .advert{
+    background: rgba(36, 37, 53, 1);
+    width: 70%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    border-radius: 15px;
+    padding: 20px 0px;
+}
+.advert h4{
+    font-family: Work Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: rgba(105, 106, 117, 1);
+}
+.advert h2{
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(105, 106, 117, 1);
+}
+.advert p{
+    font-family: Work Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    color: rgba(105, 106, 117, 1);
+}
+

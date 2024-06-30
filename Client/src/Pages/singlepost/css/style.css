@@ -1,0 +1,112 @@
+.single-post{
+    width: 768px;
+    margin: auto;
+}
+.sp-tech{
+    color: white;
+    margin: 20px 0px;
+}
+.sp-tech .btn{
+    font-family: Work Sans;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    background: rgba(75, 107, 251, 1);
+
+}
+.sp-tech p{
+    font-family: Work Sans;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: left;
+    color: white;
+    margin: 10px 0px;
+}
+.sp-tech .profile-1{
+    display: flex;
+    color: white;
+}
+.sp-tech .profile-1 h3{
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    padding: 5px ;
+}
+.sp-tech .profile-1 h5{
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    padding: 5px;
+}
+.single-post .text p{
+    font-family: Source Serif Pro;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    color: rgba(186, 186, 191, 1);
+    margin: 20px 0px;
+}
+.single-post .text h3{
+    font-family: Work Sans;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+.single-post .quote{
+    background: rgba(36, 37, 53, 1);
+    padding:30px;
+    border-left: 5px solid white;
+    border-radius: 10px;
+    margin: 20px 0px;
+}
+.single-post .quote i{
+    font-family: Source Serif Pro;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+.single-post .advert-1{
+    background: rgba(36, 37, 53, 1);
+    border-radius: 10px;
+    max-width: 95%;
+    margin: 30px auto;
+    padding: 15px 0px;
+}
+.advert-1 h4{
+    font-family: Work Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: center;
+    color: rgba(105, 106, 117, 1);
+}
+.advert-1 h2{
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 10px;
+    text-align: center;
+    color: rgba(105, 106, 117, 1);
+}
+.advert-1 p{
+    font-family: Work Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    color: rgba(105, 106, 117, 1);
+}
