@@ -4,7 +4,8 @@ import Blog from "./Pages/Blog";
 import Contact from "./Pages/Contact";
 import Pages from "./Pages/pages";
 import SinglePost from "./Pages/singlepost";
-import Signup from "./Pages/Contact/signup";
+import Signin from "./Pages/signin/signin";
+import Signup from "./Pages/signin/signup";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
           <Route path="/single_post" exact element = {<SinglePost/>} />
           <Route path="/pages" exact element = {<Pages/>} />
           <Route path="/contact" exact element = {<Contact/>} />   
-          <Route path="/contact/signup" exact element = {<Signup/>} />   
+          <Route path="/signin" exact element = {<Signin/>} />      
+          <Route path="/signup" exact element = {<Signup/>} />      
         </Routes>
       </Layout>
     </div>

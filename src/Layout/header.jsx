@@ -11,7 +11,6 @@ const Header = () => {
         <div className="head">
           <div className='logo'>
             <img src={Logo} alt="" />
-            <h3>Meta<span>Blog</span></h3>
           </div>
           <nav>
             <ul>
@@ -20,6 +19,7 @@ const Header = () => {
               <li><a href="/single_post">Single post</a></li>
               <li><a href="/pages">Pages</a></li>
               <li><a href="/contact">Contact</a></li>
+              <li><a href="/signin">Signin</a></li>
             </ul>
           </nav>
           <div className="search">

@@ -1,7 +1,7 @@
 import React from 'react'
 import './css/footer.css'
 import { MdEmail } from "react-icons/md";
-import Logo from './Assets/Logo.png'
+import Logo from './Assets/Logo (1).png'
 
 const Footer = () => {
   return (  
@@ -14,7 +14,8 @@ const Footer = () => {
             <h4>Email: <span>info@jstemplate.net</span></h4>
             <h4>Phone: <span>880 123 456 789</span></h4>
           </div>
-          <div className="Qlink">
+        <div className="links-otr">
+            <div className="Qlink">
             <h2>Quick Link</h2>
             <h4><a href="#">Home</a></h4>
             <h4><a href="#">About</a></h4>
@@ -32,6 +33,7 @@ const Footer = () => {
             <h4><a href="#">Economy</a></h4>
             <h4><a href="#">Sports</a></h4>
           </div>
+        </div>
           <div className="newsletter">
             <div>
               <h2>Weekly Newsletter</h2>
