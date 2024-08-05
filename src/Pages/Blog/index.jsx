@@ -42,81 +42,99 @@ const Blog = () => {
         <h2>Latest Post</h2>
         <div className="cards">
           <div className="card">
-            <img src={Sea} alt="" />
+            <div className="img-otr">
+              <img src={Sea} alt="" />
+            </div>
             <h4>Technology</h4>
-            <h2>The Impact of Technology on the Workplace: How Technology is Changing</h2>
+            <a href="/single_post" className="heading">The Impact of Technology on the Workplace: How Technology is Changing</a>
             <div className="intro">
               <img src={Tracey} alt="" />
               <p>Tracey Wilson  <span> August 20,2022</span></p>
             </div>
           </div>
           <div className="card">
-            <img src={Temple} alt="" />
+            <div className="img-otr">
+              <img src={Temple} alt="" />
+            </div>
             <h4>Technology</h4>
-            <h2>The Impact of Technology on the Workplace: How Technology is Changing</h2>
+            <a href="/single_post" className="heading">The Impact of Technology on the Workplace: How Technology is Changing</a>
             <div className="intro">
-              <img src={Json} alt="" />
+                <img src={Json} alt="" />
               <p>Jason Francisco  <span> August 20,2022</span></p>
             </div>
           </div>
           <div className="card">
-            <img src={Car1} alt="" />
+            <div className="img-otr">
+              <img src={Car1} alt="" />
+            </div>
             <h4>Technology</h4>
-            <h2>The Impact of Technology on the Workplace: How Technology is Changing</h2>
+            <a href="/single_post" className="heading">The Impact of Technology on the Workplace: How Technology is Changing</a>
             <div className="intro">
               <img src={Elizbath} alt="" />
               <p>Elizabeth Slavin  <span> August 20,2022</span></p>
             </div>
           </div>
           <div className="card">
-            <img src={Home} alt="" />
+            <div className="img-otr">
+              <img src={Home} alt="" />
+            </div>
             <h4>Technology</h4>
-            <h2>The Impact of Technology on the Workplace: How Technology is Changing</h2>
+            <a href="/single_post" className="heading">The Impact of Technology on the Workplace: How Technology is Changing</a>
             <div className="intro">
               <img src={Ernie} alt="" />
               <p>Ernie Smith  <span> August 20,2022</span></p>
             </div>
           </div>
           <div className="card">
-            <img src={Stone} alt="" />
+            <div className="img-otr">
+              <img src={Stone} alt="" />
+            </div>
             <h4>Technology</h4>
-            <h2>The Impact of Technology on the Workplace: How Technology is Changing</h2>
+            <a href="/single_post" className="heading">The Impact of Technology on the Workplace: How Technology is Changing</a>
             <div className="intro">
               <img src={Eric} alt="" />
               <p>Eric Smith  <span> August 20,2022</span></p>
             </div>
           </div>
           <div className="card">
-            <img src={Car2} alt="" />
+            <div className="img-otr">
+              <img src={Car2} alt="" />
+            </div>
             <h4>Technology</h4>
-            <h2>The Impact of Technology on the Workplace: How Technology is Changing</h2>
+            <a href="/single_post" className="heading">The Impact of Technology on the Workplace: How Technology is Changing</a>
             <div className="intro">
               <img src={Tracey} alt="" />
               <p>Tracey Wilson  <span> August 20,2022</span></p>
             </div>
           </div>
           <div className="card">
-            <img src={Phone} alt="" />
+            <div className="img-otr">
+              <img src={Phone} alt="" />
+            </div>
             <h4>Technology</h4>
-            <h2>The Impact of Technology on the Workplace: How Technology is Changing</h2>
+            <a href="/single_post" className="heading">The Impact of Technology on the Workplace: How Technology is Changing</a>
             <div className="intro">
               <img src={Json} alt="" />
               <p>Jason Francisco  <span> August 20,2022</span></p>
             </div>
           </div>
           <div className="card">
-            <img src={Sea2} alt="" />
+            <div className="img-otr">
+              <img src={Sea2} alt="" />
+            </div>
             <h4>Technology</h4>
-            <h2>The Impact of Technology on the Workplace: How Technology is Changing</h2>
+            <a href="/single_post" className="heading">The Impact of Technology on the Workplace: How Technology is Changing</a>
             <div className="intro">
               <img src={Elizbath} alt="" />
               <p>Elizabeth Slavin  <span> August 20,2022</span></p>
             </div>
           </div>
           <div className="card">
-            <img src={Controller} alt="" />
+            <div className="img-otr">
+              <img src={Controller} alt="" />
+            </div>
             <h4>Technology</h4>
-            <h2>The Impact of Technology on the Workplace: How Technology is Changing</h2>
+            <a href="/single_post" className="heading">The Impact of Technology on the Workplace: How Technology is Changing</a>
             <div className="intro">
               <img src={Ernie} alt="" />
               <p>Ernie Smith  <span> August 20,2022</span></p>

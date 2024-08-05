@@ -1,4 +1,5 @@
 import React from 'react'
+import image from './assets/image.png'
 import { FaBlog } from "react-icons/fa";
 
 
@@ -20,13 +21,13 @@ const Signin = () => {
                     </form>
                 </div>
                 <div className="image">
-                    <div className="circle">
+                    {/* <img src={image} alt="" /> */}
+                    {/* <div className="circle">
                         <div className="card">
                             <div className="key">
-                               
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

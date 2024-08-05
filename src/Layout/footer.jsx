@@ -46,7 +46,6 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="line"></div>
         <div className="bottom">
           <div className="content">
             <img src={Logo} alt="" />
@@ -56,7 +55,7 @@ const Footer = () => {
             </div>
           </div>
             <ul>
-              <li><a href="#">Term of use</a></li>
+              <li><a href="#">Term of Use</a></li>
               <li><a href="#">Privacy Policy</a></li>
               <li><a href="#">Cookie Policy</a></li>
             </ul>
