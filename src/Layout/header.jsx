@@ -2,7 +2,7 @@ import React from 'react'
 import './css/header.css'
 import Logo from './Assets/Logo.png'
 import { IoSearchSharp } from "react-icons/io5";
-import { MdOutlineWbSunny } from "react-icons/md";
+// import { MdOutlineWbSunny } from "react-icons/md";
 
 const Header = () => {
   return (

@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState, useEffect} from 'react'
 import './css/blog.css'
 import Image from './assets/landing.png'
 import { MdAccountCircle } from "react-icons/md";
@@ -17,8 +17,29 @@ import Elizbath from './assets/profile/Elizabeth.png'
 import Ernie from './assets/profile/Ernie.png'
 import Eric from './assets/profile/eric.png'
 import { Button } from 'react-bootstrap';
+import axios from 'axios';
+import { apiUrl } from '../../utils'; 
 
 const Blog = () => {
+
+  const[blogData, setBlogData] = useState([])
+
+  useEffect(()=>{
+    axios.get(`${apiUrl}get_blogs`)
+    .then(function (response) {
+      setBlogData(response.data)
+    })
+    .catch(function (error) {
+      // handle error
+      console.log(error);
+    })
+    .finally(function () {
+      // always executed
+    });
+  }, [])
+
+  console.log("Data in blog", blogData)
+
   return (
     <div>
       <div className="container">
@@ -41,17 +62,22 @@ const Blog = () => {
       <div className="post">
         <h2>Latest Post</h2>
         <div className="cards">
-          <div className="card">
-            <div className="img-otr">
-              <img src={Sea} alt="" />
+          {blogData?.map((item,index)=>{
+            return(
+              <div className="card" key={index}>
+              <div className="img-otr">
+                <img src={Sea} alt="" />
+              </div>
+              <h4>Technology</h4>
+              <a href="/single_post" className="heading">{item?.name}</a>
+              <div className="intro">
+                <img src={Tracey} alt="" />
+                <p>{item.author_name}  <span> August 20,2022</span></p>
+              </div>
             </div>
-            <h4>Technology</h4>
-            <a href="/single_post" className="heading">The Impact of Technology on the Workplace: How Technology is Changing</a>
-            <div className="intro">
-              <img src={Tracey} alt="" />
-              <p>Tracey Wilson  <span> August 20,2022</span></p>
-            </div>
-          </div>
+            )
+          })}
+         
           <div className="card">
             <div className="img-otr">
               <img src={Temple} alt="" />

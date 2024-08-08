@@ -36,16 +36,16 @@ const Pages = () => {
           <p>Meet Jonathan Doe, a passionate writer and blogger with a love for <br /> technology and travel. Jonathan holds a degree in Computer Science and <br /> has spent years working in the tech industry, gaining a deep understanding <br /> of the impact technology has on our lives.</p>
         </div>
         <div className="page-icon">
-          <a href="#" className="icon-otr f-icon">
+          <a href="/" className="icon-otr f-icon">
             <FaFacebook className='p-icon' />
           </a>
-          <a href="#" className="icon-otr t-icon">
+          <a href="/" className="icon-otr t-icon">
             <FaTwitter className='p-icon' />
           </a>
-          <a href="#" className="icon-otr i-icon">
+          <a href="/" className="icon-otr i-icon">
             <FaInstagram className='p-icon' />
           </a>
-          <a href="#" className="icon-otr y-icon">
+          <a href="/" className="icon-otr y-icon">
             <FaYoutube className='p-icon' />
           </a>
         </div>
@@ -123,7 +123,7 @@ const Pages = () => {
               <img src={Phone} alt="" />
             </div>
             <h4>Technology</h4>
-            <a href="#" className="heading">The Impact of Technology on the Workplace: How Technology is Changing</a>
+            <a href="/" className="heading">The Impact of Technology on the Workplace: How Technology is Changing</a>
             <div className="intro">
               <img src={Json} alt="" />
               <p>Json Francisco  <span> August 20,2022</span></p>
@@ -134,7 +134,7 @@ const Pages = () => {
               <img src={Sea2} alt="" />
             </div>
             <h4>Technology</h4>
-            <a href="#" className="heading">The Impact of Technology on the Workplace: How Technology is Changing</a>
+            <a href="/" className="heading">The Impact of Technology on the Workplace: How Technology is Changing</a>
             <div className="intro">
               <img src={Elizbath} alt="" />
               <p>Elizabeth Slavin  <span> August 20,2022</span></p>

@@ -1,5 +1,4 @@
 import React from 'react'
-import { FaBlog } from "react-icons/fa";
 import { FaGoogle } from "react-icons/fa";
 
 const Signup = () => {
@@ -15,7 +14,7 @@ const Signup = () => {
           <input type="email" placeholder='Enter your Gmail' />
           <input type="password" placeholder='Enter Your Password' />
           
-          <h6><a href="#"><FaGoogle /> Continue with Google</a></h6>
+          <h6><a href="/"><FaGoogle /> Continue with Google</a></h6>
           <button>Sign up</button>
         </form>
       </div>

@@ -17,21 +17,21 @@ const Footer = () => {
         <div className="links-otr">
             <div className="Qlink">
             <h2>Quick Link</h2>
-            <h4><a href="#">Home</a></h4>
-            <h4><a href="#">About</a></h4>
-            <h4><a href="#">Blog</a></h4>
-            <h4><a href="#">Archived</a></h4>
-            <h4><a href="#">Author</a></h4>
-            <h4><a href="#">Contact</a></h4>
+            <h4><a href="/">Home</a></h4>
+            <h4><a href="/">About</a></h4>
+            <h4><a href="/">Blog</a></h4>
+            <h4><a href="/">Archived</a></h4>
+            <h4><a href="/">Author</a></h4>
+            <h4><a href="/">Contact</a></h4>
           </div>
           <div className="category">
             <h2>Category</h2>
-            <h4><a href="#">Lifestye</a></h4>
-            <h4><a href="#">Technology</a></h4>
-            <h4><a href="#">Travel</a></h4>
-            <h4><a href="#">Business</a></h4>
-            <h4><a href="#">Economy</a></h4>
-            <h4><a href="#">Sports</a></h4>
+            <h4><a href="/">Lifestye</a></h4>
+            <h4><a href="/">Technology</a></h4>
+            <h4><a href="/">Travel</a></h4>
+            <h4><a href="/">Business</a></h4>
+            <h4><a href="/">Economy</a></h4>
+            <h4><a href="/">Sports</a></h4>
           </div>
         </div>
           <div className="newsletter">
@@ -55,9 +55,9 @@ const Footer = () => {
             </div>
           </div>
             <ul>
-              <li><a href="#">Term of Use</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Cookie Policy</a></li>
+              <li><a href="/">Term of Use</a></li>
+              <li><a href="/">Privacy Policy</a></li>
+              <li><a href="/">Cookie Policy</a></li>
             </ul>
         </div>
       </div>

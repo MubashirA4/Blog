@@ -1,6 +1,6 @@
 import React from 'react'
-import image from './assets/image.png'
-import { FaBlog } from "react-icons/fa";
+// import image from './assets/image.png'
+// import { FaBlog } from "react-icons/fa";
 
 
 const Signin = () => {
