@@ -16,8 +16,13 @@ import Ernie from '../assets/profile/Ernie.png'
 import Eric from '../assets/profile/eric.png'
 
 const Post = () => {
-    return ( 
+    return (
         <div className='container'>
+            <div className="advert">
+                <h4>Advertisement</h4>
+                <h2>You can place ads</h2>
+                <p>750x100</p>
+            </div>
             <div className="post">
                 <h2>Latest Post</h2>
                 <div className="cards">
@@ -104,7 +109,7 @@ const Post = () => {
                         </div>
                         <h4>Technology</h4>
                         <a href="/single_post" className="heading">The Impact of Technology on the Workplace: How Technology is Changing</a>
-                         <div className="intro">
+                        <div className="intro">
                             <img src={Elizbath} alt="" />
                             <p>Elizabeth Slavin  <span> August 20,2022</span></p>
                         </div>

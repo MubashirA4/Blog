@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react'
 import Layout from "./Layout";
 import Home from "./Pages/Home";
 import Blog from "./Pages/Blog";
@@ -7,8 +8,18 @@ import SinglePost from "./Pages/singlepost";
 import Signin from "./Pages/signin/signin";
 import Signup from "./Pages/signin/signup";
 import { Routes, Route } from "react-router-dom";
+import CreateBlog from "./Pages/createblog";
+import Dashboard from "./Dashboard";
+import PrivateRoute from "./Layout/privateroute";
+
 
 function App() {
+  let auth = localStorage.getItem('auth')
+
+  const [isAuthenticated, setIsAuthenticated] = useState(false)
+  useEffect(() => {
+    setIsAuthenticated(auth)
+  }, [auth])
   return (
     <div className="app">
       <Layout>
@@ -20,6 +31,9 @@ function App() {
           <Route path="/contact" exact element = {<Contact/>} />   
           <Route path="/signin" exact element = {<Signin/>} />      
           <Route path="/signup" exact element = {<Signup/>} />      
+          <Route path="/add_update_blog" exact element = {<CreateBlog/>} />      
+          <Route path="/dashboard" exact element = {<Dashboard/>} /> 
+          <Route path="/dashboard" element={<PrivateRoute isAuthenticated={isAuthenticated} element={<Dashboard />} />} />
         </Routes>
       </Layout>
     </div>
