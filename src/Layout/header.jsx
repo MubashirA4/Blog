@@ -38,7 +38,7 @@ const Header = () => {
               <li><a href="/single_post">Single post</a></li>
               <li><a href="/pages">Pages</a></li>
               <li><a href="/contact">Contact</a></li>
-              {isAuthenticated == 'true' ? <li className='text-white' onClick={logout}><a href="">Signout</a></li> : <li><a href="/signin">Signin</a></li> }
+              {isAuthenticated == 'true' ? <li className='text-white' onClick={logout}><a href="/signup">Signout</a></li> : <li><a href="/signin">Signin</a></li> }
             </ul>
           </nav>
           <div className="search">

@@ -12,14 +12,14 @@ const Signin = () => {
     const userData = {
         email: email,
         password: password
-      }
+      }     
     
     const handleSubmit = () => {
             axios.post(`${apiUrl}login`, userData)
                 .then(function (response) {
-                    console.log("response", response);
-                    localStorage.setItem('auth', true);
-                    localStorage.setItem('user_data', JSON.stringify(response?.data?.user));
+                    console.log("response", response)
+                    localStorage.setItem('auth', true)
+                    localStorage.setItem('user_data', JSON.stringify(response?.data?.userData))
                     navigate('/dashboard')
                     navigate(0)
                 })

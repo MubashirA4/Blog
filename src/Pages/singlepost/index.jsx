@@ -1,12 +1,51 @@
-import React from 'react'
+import React,{ useState, useRef } from 'react'
 import './css/style.css'
 import { Button } from 'react-bootstrap'
 import { MdAccountCircle } from "react-icons/md";
 import Temple1 from './assets/Temple.png'
 import Man from './assets/Man.png'
+import ReactQuill from 'react-quill';
+import 'react-quill/dist/quill.snow.css';
+import axios from 'axios';
+import { apiUrl } from '../../utils';
+
 
 
 const SinglePost = () => {
+  const [editorValue, setEditorValue] = useState(''); 
+  const [savedContent, setSavedContent] = useState(''); // State to manage saved content
+  const quillRef = useRef(null); 
+
+  const handleChange = (value) => {
+    setEditorValue(value); 
+  };
+
+  const handleSaveContent = async () => {
+    try {
+      const response = await axios.post(`${apiUrl}save`, {
+        content: editorValue 
+      });
+      console.log(response.data); 
+      alert('Content saved successfully!');
+      setSavedContent(editorValue); // Keep the saved content
+      setEditorValue(''); 
+    } catch (error) {
+      console.error('Error saving content:', error);
+      alert('Failed to save content.'); 
+    }
+  };
+  const handleEditContent = () => {
+    setEditorValue(savedContent); 
+  };
+
+  // Function to remove saved content
+  const handleRemoveContent = () => {
+    setSavedContent(''); // Clear saved content
+    setEditorValue(''); // Optionally clear the editor as well
+    alert('Saved content removed.'); // Notify the user
+  };
+
+
   return (
     <div className='container'>
       <div className="single-post">
@@ -54,6 +93,16 @@ const SinglePost = () => {
           <p>Finally, don't forget to capture memories of your journey. Whether it's through photographs, journaling, or souvenirs, preserving the moments and experiences of your travels can bring joy and nostalgia for years to come. However, it's also essential to be present in the moment and not let technology distract you from the beauty of your surroundings.</p>
           <h3>Conclusion:</h3>
           <p>Traveling is an art form that requires a blend of planning, preparation, and spontaneity. By following these tips and tricks, you can make the most of your journey and create memories that last a lifetime. So pack your bags, embrace the adventure, and enjoy the ride.</p>
+          <ReactQuill
+            ref={quillRef}
+            theme="snow"
+            value={editorValue}
+            onChange={handleChange}
+          />
+          <Button onClick={handleSaveContent}>Save Content</Button> {/* Button to save content */}
+          <Button onClick={handleEditContent} disabled={!savedContent}>Edit Saved Content</Button> {/* Button to edit saved content */}
+          <Button onClick={handleRemoveContent} disabled={!savedContent}>Remove Saved Content</Button> {/* Button to remove saved content */}
+          <div dangerouslySetInnerHTML={{ __html: savedContent   }} />
         </div>
       </div>
     </div>

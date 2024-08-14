@@ -1,25 +1,24 @@
 import React,{useState} from 'react'
-import { FaGoogle } from "react-icons/fa";
 import axios from 'axios';
 import { apiUrl } from '../../utils';
 import { useNavigate } from 'react-router-dom';
 
 const Signup = () => {
   const navigate = useNavigate();
-  const[name,setName] = useState('')
-  const[email ,setEmail] = useState('')
-  const[password,setPassword] = useState('')
+  const[name, setName] = useState('')
+  const[email, setEmail] = useState('')
+  const[password, setPassword] = useState('')
   const[loading, setLoading] = useState(false)
 
-  const userData ={
-    name:name,
+  const userData = {
+    name: name,
     email: email,
     password: password
   }
 
   const handleSubmit = () => {
  
-    axios.post(`${apiUrl}signup`, userData)
+    axios.post(`${apiUrl}logup`, userData)
     .then(function (response) {
       navigate('/signin')
     })
@@ -38,9 +37,7 @@ const Signup = () => {
           <input type="text" placeholder='Enter your Name' value={name} onChange={(e)=>setName(e.target.value)}/>
           <input type="email" placeholder='Enter your Gmail' value={email} onChange={(e)=>setEmail(e.target.value)} />
           <input type="password" placeholder='Enter Your Password' value={password} onChange={(e)=>setPassword(e.target.value)} />
-          
-          <h6><a href="/"><FaGoogle /> Continue with Google</a></h6>
-          <button disabled={!name && !email && !password} onClick={handleSubmit}>
+                    <button disabled={!name && !email && !password} onClick={handleSubmit}>
             {loading ? 'Sign in...' : 'Sign up'}
         </button>
         </form>
