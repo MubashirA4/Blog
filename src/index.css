@@ -784,12 +784,31 @@ nav ul{
 .container .p-post{
     margin-block: 100px;
 }
-/* Contact */
+/* Signup */
+.signup{
+    width: 540px;
+    margin: 70px auto;
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+.signup a{
+    font: 500 16px/24px Work Sans;
+}
+.signup form p{
+    margin-top: 20px;
+}
+.signup form p a{
+    text-decoration: none;
+}
+/* Signin */
+.contact .form{
+    border-radius: 10px;
+}
 .contact{
-    max-width: 540px;
+    max-width: 480px;
     color: white;
     margin: 60px auto;
-    border-radius: 20px;
 }
 .contact .form{
     background: white;
@@ -815,6 +834,10 @@ form h3{
 form p{
     color: #434242;
     font: 400 16px/24px Work Sans;
+    margin-top: 15px;
+}
+form p a{
+    text-decoration: none;
 }
 form input{
     font-family: Work Sans;
@@ -830,7 +853,7 @@ form input:focus{
     border-bottom: 1px solid  black;
 }
 form button{
-    background: linear-gradient(to right, #7DD3CD, #41D2B8);
+    background: rgba(75, 107, 251, 1);
     border: none;
     border-radius: 10px;
     text-align: center;
@@ -838,36 +861,10 @@ form button{
     padding-block: 10px;
     color: white;
     font: 500 16px/24px Work Sans;
-    margin-block: 40px;
+    margin-top: 30px;
+    cursor: pointer;
 }
-.contact .image{
-    position: relative;
-    background-image: linear-gradient(to bottom, #53B2E8, #41D2B8 );
-}
-.contact .image .circle{
-    position: absolute;
-    top: 100px;
-    right: 15px;
-    background-color: #55ACD2;
-    padding: 100px 150px;
-    border-radius: 50%;
-}
-.contact .image .circle .card{
-    background: white;
-}
-.image .key .i-key{
-    border: none;
-}
-.signup{
-    width: 540px;
-    margin: 70px auto;
-    background: white;
-    border-radius: 10px;
-    margin-bottom: 40px;
-}
-.signup h6 a{
-    font: 500 16px/24px Work Sans;
-}
+
 /* Footer */
 footer{
     background:rgba(20, 22, 36, 1) ;

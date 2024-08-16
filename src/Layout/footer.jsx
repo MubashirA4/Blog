@@ -2,6 +2,7 @@ import React from 'react'
 import './css/footer.css'
 import { MdEmail } from "react-icons/md";
 import Logo from './Assets/Logo (1).png'
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (  
@@ -17,21 +18,21 @@ const Footer = () => {
         <div className="links-otr">
             <div className="Qlink">
             <h2>Quick Link</h2>
-            <h4><a href="/">Home</a></h4>
-            <h4><a href="/">About</a></h4>
-            <h4><a href="/">Blog</a></h4>
-            <h4><a href="/">Archived</a></h4>
-            <h4><a href="/">Author</a></h4>
-            <h4><a href="/">Contact</a></h4>
+            <h4><Link to="/">Home</Link></h4>
+            <h4><Link to="/">About</Link></h4>
+            <h4><Link to="/">Blog</Link></h4>
+            <h4><Link to="/">Archived</Link></h4>
+            <h4><Link to="/">Author</Link></h4>
+            <h4><Link to="/">Contact</Link></h4>
           </div>
           <div className="category">
             <h2>Category</h2>
-            <h4><a href="/">Lifestye</a></h4>
-            <h4><a href="/">Technology</a></h4>
-            <h4><a href="/">Travel</a></h4>
-            <h4><a href="/">Business</a></h4>
-            <h4><a href="/">Economy</a></h4>
-            <h4><a href="/">Sports</a></h4>
+            <h4><Link to="/">Lifestye</Link></h4>
+            <h4><Link to="/">Technology</Link></h4>
+            <h4><Link to="/">Travel</Link></h4>
+            <h4><Link to="/">Business</Link></h4>
+            <h4><Link to="/">Economy</Link></h4>
+            <h4><Link to="/">Sports</Link></h4>
           </div>
         </div>
           <div className="newsletter">
@@ -55,9 +56,9 @@ const Footer = () => {
             </div>
           </div>
             <ul>
-              <li><a href="/">Term of Use</a></li>
-              <li><a href="/">Privacy Policy</a></li>
-              <li><a href="/">Cookie Policy</a></li>
+              <li><Link to="/">Term of Use</Link></li>
+              <li><Link to="/">Privacy Policy</Link></li>
+              <li><Link to="/">Cookie Policy</Link></li>
             </ul>
         </div>
       </div>

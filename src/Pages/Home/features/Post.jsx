@@ -14,7 +14,7 @@ import Json from '../assets/profile/Json.png'
 import Elizbath from '../assets/profile/Elizabeth.png'
 import Ernie from '../assets/profile/Ernie.png'
 import Eric from '../assets/profile/eric.png'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 
 const Post = () => {
@@ -37,7 +37,7 @@ const Post = () => {
                             <img src={Sea} alt="" />
                         </div>
                         <h4>Technology</h4>
-                        <a href="/single_post" className="heading">The Impact of Technology on the Workplace: How Technology is Changing</a>
+                        <Link to="/single_post" className="heading">The Impact of Technology on the Workplace: How Technology is Changing</Link>
                         <div className="intro">
                             <img src={Tracey} alt="" />
                             <p>Tracey Wilson  <span> August 20,2022</span></p>
@@ -48,7 +48,7 @@ const Post = () => {
                             <img src={Temple} alt="" />
                         </div>
                         <h4>Technology</h4>
-                        <a href="/single_post" className="heading">The Impact of Technology on the Workplace: How Technology is Changing</a>
+                        <Link to="/single_post" className="heading">The Impact of Technology on the Workplace: How Technology is Changing</Link>
                         <div className="intro">
                             <img src={Json} alt="" />
                             <p>Jason Francisco  <span> August 20,2022</span></p>
@@ -59,7 +59,7 @@ const Post = () => {
                             <img src={Car1} alt="" />
                         </div>
                         <h4>Technology</h4>
-                        <a href="/single_post" className="heading">The Impact of Technology on the Workplace: How Technology is Changing</a>
+                        <Link to="/single_post" className="heading">The Impact of Technology on the Workplace: How Technology is Changing</Link>
                         <div className="intro">
                             <img src={Elizbath} alt="" />
                             <p>Elizabeth Slavin  <span> August 20,2022</span></p>
@@ -70,7 +70,7 @@ const Post = () => {
                             <img src={Home} alt="" />
                         </div>
                         <h4>Technology</h4>
-                        <a href="/single_post" className="heading">The Impact of Technology on the Workplace: How Technology is Changing</a>
+                        <Link to="/single_post" className="heading">The Impact of Technology on the Workplace: How Technology is Changing</Link>
                         <div className="intro">
                             <img src={Ernie} alt="" />
                             <p>Ernie Smith  <span> August 20,2022</span></p>
@@ -81,7 +81,7 @@ const Post = () => {
                             <img src={Stone} alt="" />
                         </div>
                         <h4>Technology</h4>
-                        <a href="/single_post" className="heading">The Impact of Technology on the Workplace: How Technology is Changing</a>
+                        <Link to="/single_post" className="heading">The Impact of Technology on the Workplace: How Technology is Changing</Link>
                         <div className="intro">
                             <img src={Eric} alt="" />
                             <p>Eric Smith  <span> August 20,2022</span></p>
@@ -92,7 +92,7 @@ const Post = () => {
                             <img src={Car2} alt="" />
                         </div>
                         <h4>Technology</h4>
-                        <a href="/single_post" className="heading">The Impact of Technology on the Workplace: How Technology is Changing</a>
+                        <Link to="/single_post" className="heading">The Impact of Technology on the Workplace: How Technology is Changing</Link>
                         <div className="intro">
                             <img src={Tracey} alt="" />
                             <p>Tracey Wilson  <span> August 20,2022</span></p>
@@ -103,7 +103,7 @@ const Post = () => {
                             <img src={Phone} alt="" />
                         </div>
                         <h4>Technology</h4>
-                        <a href="/single_post" className="heading">The Impact of Technology on the Workplace: How Technology is Changing</a>
+                        <Link to="/single_post" className="heading">The Impact of Technology on the Workplace: How Technology is Changing</Link>
                         <div className="intro">
                             <img src={Json} alt="" />
                             <p>Jason Francisco  <span> August 20,2022</span></p>
@@ -114,7 +114,7 @@ const Post = () => {
                             <img src={Sea2} alt="" />
                         </div>
                         <h4>Technology</h4>
-                        <a href="/single_post" className="heading">The Impact of Technology on the Workplace: How Technology is Changing</a>
+                        <Link to="/single_post" className="heading">The Impact of Technology on the Workplace: How Technology is Changing</Link>
                         <div className="intro">
                             <img src={Elizbath} alt="" />
                             <p>Elizabeth Slavin  <span> August 20,2022</span></p>
@@ -125,7 +125,7 @@ const Post = () => {
                             <img src={Controller} alt="" />
                         </div>
                         <h4>Technology</h4>
-                        <a href="/single_post" className="heading">The Impact of Technology on the Workplace: How Technology is Changing</a>
+                        <Link to="/single_post" className="heading">The Impact of Technology on the Workplace: How Technology is Changing</Link>
                         <div className="intro">
                             <img src={Ernie} alt="" />
                             <p>Ernie Smith  <span> August 20,2022</span></p>

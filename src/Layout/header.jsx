@@ -5,6 +5,7 @@ import { FaBars } from "react-icons/fa";
 import { FaTimes } from "react-icons/fa";
 import { IoSearchSharp } from "react-icons/io5";
 import { Navigate, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 const Header = () => {
@@ -19,6 +20,7 @@ const Header = () => {
 
   const logout =()=>{
     localStorage.setItem('auth', false)
+    localStorage.removeItem('user_data');
     navigate('/')
   }
 
@@ -29,16 +31,16 @@ const Header = () => {
       <div className='container'>
         <div className="head">
           <div className='logo'>
-            <a href="/"><img src={Logo} alt="" /></a>
+            <Link to="/"><img src={Logo} alt="" /></Link>
           </div>
           <nav className={`nav_links ${showMenu == true ? 'show_menu' : 'hide_menu'}`}>
             <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="/blog">Blog</a></li>
-              <li><a href="/single_post">Single post</a></li>
-              <li><a href="/pages">Pages</a></li>
-              <li><a href="/contact">Contact</a></li>
-              {isAuthenticated == 'true' ? <li className='text-white' onClick={logout}><a href="/signup">Signout</a></li> : <li><a href="/signin">Signin</a></li> }
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/blog">Blog</Link></li>
+              <li><Link to="/single_post">Single post</Link></li>
+              <li><Link to="/pages">Pages</Link></li>
+              <li><Link to="/contact">Contact</Link></li>
+              {isAuthenticated == 'true' ? <li className='text-white' onClick={logout}><Link to="/">Signout</Link></li> : <li><Link to="/signin">Signin</Link></li> }
             </ul>
           </nav>
           <div className="search">
