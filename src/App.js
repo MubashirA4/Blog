@@ -13,13 +13,11 @@ import Dashboard from "./Dashboard";
 import PrivateRoute from './Layout/privateroute';
 
 function App() {
-  let auth = localStorage.getItem('auth')
+  const [isAuthenticated, setIsAuthenticated] = useState(localStorage.getItem('auth') === 'true');
 
-  const [isAuthenticated, setIsAuthenticated] = useState(false)
-
-  useEffect(() => {
-    setIsAuthenticated(auth)
-  }, [auth])
+  const handleSignIn = () => {
+    setIsAuthenticated(true);
+  };
 
   return (
     <div className="app">
@@ -27,15 +25,17 @@ function App() {
         <Routes>
           <Route path="/" exact element={ <Home/>} />
           <Route path="/blog" exact element = {<Blog/>} />
-          <Route path="/single_post" exact element = {<SinglePost/>} />
+          {/* <Route path="/single_post" exact element = {<SinglePost/>} /> */}
           <Route path="/pages" exact element = {<Pages/>} />
           <Route path="/contact" exact element = {<Contact/>} />   
           <Route path="/signin" exact element = {<Signin/>} />      
           <Route path="/signup" exact element = {<Signup/>} />      
-          <Route path="/add_update_blog" exact element = {<CreateBlog/>} />      
-          <Route path="/dashboard" exact element = {<Dashboard/>} /> 
+          {/* <Route path="/add_update_blog" exact element = {<CreateBlog/>} />       */}
+          {/* <Route path="/dashboard" exact element = {<Dashboard/>} />  */}
           <Route path="/dashboard" element={<PrivateRoute isAuthenticated={isAuthenticated} element={<Dashboard />} />} />
           <Route path="/add_update_blog" element={<PrivateRoute isAuthenticated={isAuthenticated} element={<CreateBlog/>} />} />
+          <Route path="/single_post" element={<PrivateRoute isAuthenticated={isAuthenticated} element={<SinglePost/>} />} />
+       
        </Routes>
       </Layout>
     </div>

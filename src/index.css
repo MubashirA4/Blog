@@ -528,9 +528,12 @@ nav ul{
     cursor: pointer;
     transition: all 0.3s;
 }
-.post .view_post button:hover{
+.post button:hover{
     background-color: rgba(75, 107, 251, 1);
-    color: #fff;
+    color:white;
+}
+.post button a{
+    color: rgba(105, 106, 117, 1);
 }
 
 /* Blog page */
@@ -783,9 +786,7 @@ nav ul{
 }
 /* Contact */
 .contact{
-    max-width: 720px;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    max-width: 540px;
     color: white;
     margin: 60px auto;
     border-radius: 20px;
@@ -859,7 +860,7 @@ form button{
 }
 .signup{
     width: 540px;
-    margin: auto;
+    margin: 70px auto;
     background: white;
     border-radius: 10px;
     margin-bottom: 40px;

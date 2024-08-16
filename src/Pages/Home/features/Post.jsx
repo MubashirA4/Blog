@@ -14,8 +14,14 @@ import Json from '../assets/profile/Json.png'
 import Elizbath from '../assets/profile/Elizabeth.png'
 import Ernie from '../assets/profile/Ernie.png'
 import Eric from '../assets/profile/eric.png'
+import { useNavigate } from 'react-router-dom'
+
 
 const Post = () => {
+    const navigate = useNavigate()
+    const handlechange = () => {
+        navigate('/blog')
+    }
     return (
         <div className='container'>
             <div className="advert">
@@ -127,7 +133,7 @@ const Post = () => {
                     </div>
                 </div>
                 <div className="view_post">
-                    <button>View All Post</button>
+                    <button onClick={handlechange}>View All Post</button>
                 </div>
             </div>
             <div className="advert">
