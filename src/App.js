@@ -9,6 +9,7 @@ import Signup from "./Pages/signin/signup";
 import Signin from './Pages/signin/signin';
 import { Routes, Route } from "react-router-dom";
 import CreateBlog from "./Pages/createblog";
+import CreateNewBlog from './Pages/Blog/addblog';
 import Dashboard from "./Dashboard";
 import PrivateRoute from './Layout/privateroute';
 
@@ -34,6 +35,7 @@ function App() {
           {/* <Route path="/dashboard" exact element = {<Dashboard/>} />  */}
           <Route path="/dashboard" element={<PrivateRoute isAuthenticated={isAuthenticated} element={<Dashboard />} />} />
           <Route path="/add_update_blog" element={<PrivateRoute isAuthenticated={isAuthenticated} element={<CreateBlog/>} />} />
+          <Route path="/create_new_blog" element={<PrivateRoute isAuthenticated={isAuthenticated} element={<CreateNewBlog/>} />} />
           <Route path="/single_post" element={<PrivateRoute isAuthenticated={isAuthenticated} element={<SinglePost/>} />} />
        
        </Routes>
