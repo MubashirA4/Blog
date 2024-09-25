@@ -528,6 +528,9 @@ nav ul{
     cursor: pointer;
     transition: all 0.3s;
 }
+.post .view_post button a{
+    color: white;
+}
 .post button:hover{
     background-color: rgba(75, 107, 251, 1);
     color:white;

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import './css/blog.css'
+import Card from '../../card/card';
 import Image from './assets/landing.png'
 import { MdAccountCircle } from "react-icons/md";
 import Sea from './assets/cards/sea.png'
@@ -65,114 +66,94 @@ const Blog = () => {
           <div className="cards">
             {blogData?.map((item, index) => {
               return (
-                <div className="card" key={index}>
-                  <div className="img-otr">
-                    <img src={Sea} alt="" />
-                  </div>
-                  <h4>Technology</h4>
-                  <Link to="/single_post" className="heading">{item?.name}</Link>
-                  <div className="intro">
-                    <img src={Tracey} alt="" />
-                    <p>{item.author_name}  <span> August 20,2022</span></p>
-                  </div>
-                </div>
+                <Card key={index}
+                imgsrc={Sea}
+                title={item?.name}
+                link="/single_post"
+                heading={item?.blog_details}
+                authorImage={Tracey}
+                authorName={item.author_name}
+                authorDate={item.blog_create_date}
+             />
               )
             })}
 
-            <div className="card">
-              <div className="img-otr">
-                <img src={Temple} alt="" />
-              </div>
-              <h4>Technology</h4>
-              <Link to="/single_post" className="heading">The Impact of Technology on the Workplace: How Technology is Changing</Link>
-              <div className="intro">
-                <img src={Json} alt="" />
-                <p>Jason Francisco  <span> August 20,2022</span></p>
-              </div>
-            </div>
-            <div className="card">
-              <div className="img-otr">
-                <img src={Car1} alt="" />
-              </div>
-              <h4>Technology</h4>
-              <Link to="/single_post" className="heading">The Impact of Technology on the Workplace: How Technology is Changing</Link>
-              <div className="intro">
-                <img src={Elizbath} alt="" />
-                <p>Elizabeth Slavin  <span> August 20,2022</span></p>
-              </div>
-            </div>
-            <div className="card">
-              <div className="img-otr">
-                <img src={Home} alt="" />
-              </div>
-              <h4>Technology</h4>
-              <Link to="/single_post" className="heading">The Impact of Technology on the Workplace: How Technology is Changing</Link>
-              <div className="intro">
-                <img src={Ernie} alt="" />
-                <p>Ernie Smith  <span> August 20,2022</span></p>
-              </div>
-            </div>
-            <div className="card">
-              <div className="img-otr">
-                <img src={Stone} alt="" />
-              </div>
-              <h4>Technology</h4>
-              <Link to="/single_post" className="heading">The Impact of Technology on the Workplace: How Technology is Changing</Link>
-              <div className="intro">
-                <img src={Eric} alt="" />
-                <p>Eric Smith  <span> August 20,2022</span></p>
-              </div>
-            </div>
-            <div className="card">
-              <div className="img-otr">
-                <img src={Car2} alt="" />
-              </div>
-              <h4>Technology</h4>
-              <Link to="/single_post" className="heading">The Impact of Technology on the Workplace: How Technology is Changing</Link>
-              <div className="intro">
-                <img src={Tracey} alt="" />
-                <p>Tracey Wilson  <span> August 20,2022</span></p>
-              </div>
-            </div>
-            <div className="card">
-              <div className="img-otr">
-                <img src={Phone} alt="" />
-              </div>
-              <h4>Technology</h4>
-              <Link to="/single_post" className="heading">The Impact of Technology on the Workplace: How Technology is Changing</Link>
-              <div className="intro">
-                <img src={Json} alt="" />
-                <p>Jason Francisco  <span> August 20,2022</span></p>
-              </div>
-            </div>
-            <div className="card">
-              <div className="img-otr">
-                <img src={Sea2} alt="" />
-              </div>
-              <h4>Technology</h4>
-              <Link to="/single_post" className="heading">The Impact of Technology on the Workplace: How Technology is Changing</Link>
-              <div className="intro">
-                <img src={Elizbath} alt="" />
-                <p>Elizabeth Slavin  <span> August 20,2022</span></p>
-              </div>
-            </div>
-            <div className="card">
-              <div className="img-otr">
-                <img src={Controller} alt="" />
-              </div>
-              <h4>Technology</h4>
-              <Link to="/single_post" className="heading">The Impact of Technology on the Workplace: How Technology is Changing</Link>
-              <div className="intro">
-                <img src={Ernie} alt="" />
-                <p>Ernie Smith  <span> August 20,2022</span></p>
-              </div>
-            </div>
+           
+            <Card 
+               imgsrc={Stone}
+               title="Technology"
+               link="/single_post"
+               heading="The Impact of Technology on the Workplace: How Technology is Changing"
+               authorImage={Eric}
+               authorName="Eric Smith"
+               authorDate="August 20, 2022"
+            />
+            <Card 
+               imgsrc={Temple}
+               title="Technology"
+               link="/single_post"
+               heading="The Impact of Technology on the Workplace: How Technology is Changing"
+               authorImage={Json}
+               authorName="Jason Francisco"
+               authorDate="August 20, 2022"
+            />
+            <Card 
+               imgsrc={Car1}
+               title="Technology"
+               link="/single_post"
+               heading="The Impact of Technology on the Workplace: How Technology is Changing"
+               authorImage={Elizbath}
+               authorName="Elizabeth Slavin"
+               authorDate="August 20, 2022"
+            />
+            <Card 
+               imgsrc={Home}
+               title="Technology"
+               link="/single_post"
+               heading="The Impact of Technology on the Workplace: How Technology is Changing"
+               authorImage={Ernie}
+               authorName="Ernie Smith"
+               authorDate="August 20, 2022"
+            />
+            <Card 
+               imgsrc={Car2}
+               title="Technology"
+               link="/single_post"
+               heading="The Impact of Technology on the Workplace: How Technology is Changing"
+               authorImage={Tracey}
+               authorName="Tracey Wilson "
+               authorDate="August 20, 2022"
+            />
+            <Card 
+               imgsrc={Phone}
+               title="Technology"
+               link="/single_post"
+               heading="The Impact of Technology on the Workplace: How Technology is Changing"
+               authorImage={Json}
+               authorName="Jason Francisco "
+               authorDate="August 20, 2022"
+            />
+            <Card 
+               imgsrc={Sea2}
+               title="Technology"
+               link="/single_post"
+               heading="The Impact of Technology on the Workplace: How Technology is Changing"
+               authorImage={Elizbath}
+               authorName="Elizabeth Slavin "
+               authorDate="August 20, 2022"
+            />
+            <Card 
+               imgsrc={Controller}
+               title="Technology"
+               link="/single_post"
+               heading="The Impact of Technology on the Workplace: How Technology is Changing"
+               authorImage={Ernie}
+               authorName="Ernie Smith "
+               authorDate="August 20, 2022"
+            />
           </div>
-          <Link to="/add_update_blog" >
-          <Button>Add blog</Button>
-        </Link>
           <div className="view_post">
-            <button>View All Post</button>
+            <button><Link to="/create_new_blog" >Add blog</Link></button>
           </div>
         </div>
         <div className="advert">
